@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="ezuikit.js"></script>
+    <style>
+      html,
+      body {
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        background: #00000080;
+        overflow: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="playWind"></div>
+    <script>
+      var domain = "https://open.ys7.com";
+      var EZOPENDemo;
+      window.EZOPENDemo = EZOPENDemo;
+      var width = document.documentElement.clientWidth;
+      var height = document.documentElement.clientHeight;
+      const ezopenInit = () => {
+        EZOPENDemo = new EZUIKit.EZUIKitPlayer({
+          id: "playWind",
+          width: width,
+          height: height,
+          template: "pcLive",
+          url: "ezopen://Xsy123ad@open.ys7.com/K80575892/1.live",
+          accessToken: "at.573rkbc2cep08yuz1uixi8e71n7jojv1-1vxzs0dbhb-1kz7hv8-yiqlnjxlq",
+        });
+      };
+      ezopenInit();
+    </script>
+  </body>
+</html>
